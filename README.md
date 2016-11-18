@@ -1,11 +1,11 @@
 # WIRIS Multi Choice question type
 [![Build Status](https://travis-ci.org/wiris/moodle-qtype_multichoicewiris.svg?branch=master)](https://travis-ci.org/wiris/moodle-qtype_multichoicewiris)
 
-The WIRIS Multi Choice question type extends Moodle Multi Choice question type adding mathematical functionalities to it.
+The WIRIS Multi Choice question type extends the Moodle Multi Choice type, adding mathematical functionality to it.
 
-All mathematical items are generated in a single calculation section and they can be referenced from anywhere in the content, question wording, answer, feedback for the student, etc.
+All mathematical items are generated in a single calculation section and they can be referenced from anywhere in the content, in the question statement, answer, feedback for the student, etc.
 
-On the side of the student, he will be able to introduce his answers by using a WYSIWYG formula editor and, if the teacher so specifies, they will have access to a WIRIS cas session to make some calculations. The answer syntax check will prevent the students from unnecessary errors and misspellings.
+On the student's side, they will be able to introduce their answers by using a WYSIWYG formula editor and, if the teacher so specifies, they will have access to a WIRIS cas session to make some calculations. The answer syntax checker will prevent the students from unnecessary errors and misspellings.
 
 ## Install instructions
 

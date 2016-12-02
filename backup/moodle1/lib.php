@@ -58,7 +58,7 @@ class moodle1_qtype_multichoicewiris_handler extends moodle1_qtype_multichoice_h
     }
 
     protected function wrsqz_getcasforcomputations($data) {
-        global $CFG;
+        
         $wrap = com_wiris_system_CallWrapper::getInstance();
 
         $wirisquestion = '';
@@ -93,7 +93,7 @@ class moodle1_qtype_multichoicewiris_handler extends moodle1_qtype_multichoice_h
     }
 
     protected function wrsqz_hiddeninitialcasvalue($data) {
-        global $CFG;
+        
         $wrap = com_wiris_system_CallWrapper::getInstance();
 
         $wirisquestion = '';

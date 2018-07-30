@@ -28,8 +28,8 @@ class moodle1_qtype_multichoicewiris_handler extends moodle1_qtype_multichoice_h
         return array(
             'ANSWERS/ANSWER',
             'MULTICHOICE',
-            'MULTICHOICEWiris',
-            'MULTICHOICEWiris/WirisOPTIONS'
+            'MULTICHOICEWIRIS',
+            'MULTICHOICEWIRIS/WIRISOPTIONS'
         );
     }
 

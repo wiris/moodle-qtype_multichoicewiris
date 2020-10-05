@@ -1,0 +1,12 @@
+.que.multichoicewiris .answer div.r0,
+.que.multichoicewiris .answer div.r1 {
+    display: flex;
+    margin: 0.25rem 0;
+    align-items: flex-start;
+}
+
+.que.multichoicewiris .answer div.r0 input,
+.que.multichoicewiris .answer div.r1 input {
+    margin: 0.3rem 0.5rem;
+    width: 14px;
+}

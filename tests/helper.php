@@ -137,7 +137,33 @@ class qtype_multichoicewiris_test_helper extends question_test_helper {
         );
 
         // Wiris specific information.
-        $qdata->wirisquestion = '<question><wirisCasSession><![CDATA[<wiriscalc version="3.2"><title><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Untitled calc</mtext></math></title><properties><property name="decimal_separator">.</property><property name="digit_group_separator"></property><property name="float_format">mg</property><property name="imaginary_unit">i</property><property name="implicit_times_operator">false</property><property name="item_separator">,</property><property name="lang">en</property><property name="precision">4</property><property name="quizzes_question_options">true</property><property name="save_settings_in_cookies">false</property><property name="times_operator">·</property><property name="use_degrees">false</property></properties><session version="3.0" lang="en"><task><title><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Sheet 1</mtext></math></title><group><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t1</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t2</mi><mo>=</mo><mn>15</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t3</mi><mo>=</mo><mn>55</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>55</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t4</mi><mo>=</mo><mn>25</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t5</mi><mo>=</mo><mn>30</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group></task></session><constructions><construction group="1">{&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}</construction></constructions></wiriscalc>]]></wirisCasSession><correctAnswers><correctAnswer></correctAnswer></correctAnswers><assertions><assertion name="syntax_math"/><assertion name="equivalent_symbolic"><param name="tolerance">0.001</param><param name="tolerance_digits">false</param><param name="relative_tolerance">true</param></assertion></assertions><slots><slot><localData><data name="cas">false</data><data name="auxiliaryTextInput">false</data></localData><initialContent></initialContent></slot></slots></question>';
+        $qdata->wirisquestion = '<question><wirisCasSession><![CDATA[<wiriscalc version="3.2"><title>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Untitled calc</mtext></math></title><properties>
+        <property name="decimal_separator">.</property><property name="digit_group_separator"></property>
+        <property name="float_format">mg</property><property name="imaginary_unit">i</property>
+        <property name="implicit_times_operator">false</property><property name="item_separator">,</property>
+        <property name="lang">en</property><property name="precision">4</property><property name="quizzes_question_options">
+        true</property><property name="save_settings_in_cookies">false</property><property name="times_operator">·</property>
+        <property name="use_degrees">false</property></properties><session version="3.0" lang="en"><task><title>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Sheet 1</mtext></math></title><group><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t1</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></math>
+        </input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></output></command>
+        <command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t2</mi><mo>=</mo><mn>15</mn>
+        </math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math></output></command><command>
+        <input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t3</mi><mo>=</mo><mn>55</mn></math>
+        </input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>55</mn></math></output></command><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t4</mi><mo>=</mo><mn>25</mn></math></input>
+        <output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math></output></command><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t5</mi><mo>=</mo><mn>30</mn></math></input>
+        <output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math></output></command><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group></task></session><constructions>
+        <construction group="1">
+        {&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}
+        </construction></constructions></wiriscalc>]]></wirisCasSession><correctAnswers><correctAnswer></correctAnswer>
+        </correctAnswers><assertions><assertion name="syntax_math"/><assertion name="equivalent_symbolic">
+        <param name="tolerance">0.001</param><param name="tolerance_digits">false</param><param name="relative_tolerance">true
+        </param></assertion></assertions><slots><slot><localData><data name="cas">false</data><data name="auxiliaryTextInput">
+        false</data></localData><initialContent></initialContent></slot></slots></question>';
         $qdata->wirislang = 'en';
         $qdata->wirisessay = '';
 
@@ -172,7 +198,7 @@ class qtype_multichoicewiris_test_helper extends question_test_helper {
         $qdata->fraction = array('0.25', '0.25', '0.25', '0.25', '0.0');
         $qdata->answer = array(
             0 => array(
-                'text' => '#t1',    
+                'text' => '#t1',
                 'format' => FORMAT_PLAIN
             ),
             1 => array(
@@ -230,7 +256,33 @@ class qtype_multichoicewiris_test_helper extends question_test_helper {
         $qdata->hintshownumcorrect = array(1, 1);
 
         // Wiris specific information.
-        $qdata->wirisquestion = '<question><wirisCasSession><![CDATA[<wiriscalc version="3.2"><title><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Untitled calc</mtext></math></title><properties><property name="decimal_separator">.</property><property name="digit_group_separator"></property><property name="float_format">mg</property><property name="imaginary_unit">i</property><property name="implicit_times_operator">false</property><property name="item_separator">,</property><property name="lang">en</property><property name="precision">4</property><property name="quizzes_question_options">true</property><property name="save_settings_in_cookies">false</property><property name="times_operator">·</property><property name="use_degrees">false</property></properties><session version="3.0" lang="en"><task><title><math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Sheet 1</mtext></math></title><group><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t1</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t2</mi><mo>=</mo><mn>15</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t3</mi><mo>=</mo><mn>55</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>55</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t4</mi><mo>=</mo><mn>25</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t5</mi><mo>=</mo><mn>30</mn></math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math></output></command><command><input><math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group></task></session><constructions><construction group="1">{&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}</construction></constructions></wiriscalc>]]></wirisCasSession><correctAnswers><correctAnswer></correctAnswer></correctAnswers><assertions><assertion name="syntax_math"/><assertion name="equivalent_symbolic"><param name="tolerance">0.001</param><param name="tolerance_digits">false</param><param name="relative_tolerance">true</param></assertion></assertions><slots><slot><localData><data name="cas">false</data><data name="auxiliaryTextInput">false</data></localData><initialContent></initialContent></slot></slots></question>';
+        $qdata->wirisquestion = '<question><wirisCasSession><![CDATA[<wiriscalc version="3.2"><title>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Untitled calc</mtext></math></title><properties>
+        <property name="decimal_separator">.</property><property name="digit_group_separator"></property>
+        <property name="float_format">mg</property><property name="imaginary_unit">i</property>
+        <property name="implicit_times_operator">false</property><property name="item_separator">,</property>
+        <property name="lang">en</property><property name="precision">4</property><property name="quizzes_question_options">
+        true</property><property name="save_settings_in_cookies">false</property><property name="times_operator">·</property>
+        <property name="use_degrees">false</property></properties><session version="3.0" lang="en"><task><title>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mtext>Sheet 1</mtext></math></title><group><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t1</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></math>
+        </input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><msqrt><mn>3</mn></msqrt></math></output></command>
+        <command><input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t2</mi><mo>=</mo><mn>15</mn>
+        </math></input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>15</mn></math></output></command><command>
+        <input><math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t3</mi><mo>=</mo><mn>55</mn></math>
+        </input><output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>55</mn></math></output></command><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t4</mi><mo>=</mo><mn>25</mn></math></input>
+        <output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>25</mn></math></output></command><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mi mathvariant="normal">t5</mi><mo>=</mo><mn>30</mn></math></input>
+        <output><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>30</mn></math></output></command><command><input>
+        <math xmlns="http://www.w3.org/1998/Math/MathML"/></input></command></group></task></session><constructions>
+        <construction group="1">
+        {&quot;elements&quot;:[],&quot;constraints&quot;:[],&quot;displays&quot;:[],&quot;handwriting&quot;:[]}
+        </construction></constructions></wiriscalc>]]></wirisCasSession><correctAnswers><correctAnswer></correctAnswer>
+        </correctAnswers><assertions><assertion name="syntax_math"/><assertion name="equivalent_symbolic"><param name="tolerance">
+        0.001</param><param name="tolerance_digits">false</param><param name="relative_tolerance">true</param></assertion>
+        </assertions><slots><slot><localData><data name="cas">false</data><data name="auxiliaryTextInput">false</data></localData>
+        <initialContent></initialContent></slot></slots></question>';
         $qdata->wirislang = 'en';
         $qdata->wirisessay = '';
 

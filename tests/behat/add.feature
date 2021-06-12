@@ -25,7 +25,7 @@ Feature: Test creating a Multiple choice wiris question without template
     And I choose the question type "Multiple choice - science"
     Then I set the following fields to these values:
       | Question name | multichoiceanswer-wiris-001 random name |
-      | Question text | This is a multichoice wiris question    |     
+      | Question text | This is a multichoice wiris question    |
     And I open Wiris Quizzes Studio
     And I click on "Define random variables and functions" "text"
     And I press the left key

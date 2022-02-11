@@ -28,6 +28,9 @@
  * @copyright  2021 Wiris
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
+$CFG->behat_increasetimeout = 3;
+
 class qtype_multichoicewiris_test_helper extends question_test_helper {
     public function get_test_questions() {
         return array('four_of_five_science');

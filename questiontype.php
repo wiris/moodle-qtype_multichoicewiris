@@ -66,47 +66,11 @@ class qtype_multichoicewiris extends qtype_wq {
         if (isset($question) && $question == 0) {
             return false;
         }
-        if (isset($data['#']['wirisquestion']) && substr($data['#']['wirisquestion'][0]['#'], 0, 9) == '«session') {
-            // Moodle 1.9.
-            $text = $data['#']['questiontext'][0]['#']['text'][0]['#'];
-            $text = $this->wrsqz_adapttext($text);
-            $data['#']['questiontext'][0]['#']['text'][0]['#'] = $text;
-            $qo = $format->import_multichoice($data);
-            $qo->qtype = 'multichoicewiris';
-            $wirisquestion = '<question><wirisCasSession>';
-            $wirisquestionmathmldecode = $this->wrsqz_mathml_decode(trim($data['#']['wirisquestion'][0]['#']));
-            $wirisquestion .= htmlspecialchars($wirisquestionmathmldecode, ENT_COMPAT, "UTF-8");
-            $wirisquestion .= '</wirisCasSession>';
 
-            if (isset($data['#']['wirisoptions']) && count($data['#']['wirisoptions'][0]['#']) > 0) {
-                $wirisquestion .= '<localData>';
-                $wirisquestion .= $this->wrsqz_get_cas_for_computations($data);
-                $wirisquestion .= $this->wrsqz_hidden_initial_cas_value($data);
-                $wirisquestion .= '</localData>';
-            }
-
-            if (isset($data['#']['wirisoverrideanswer']) && $data['#']['wirisoverrideanswer'][0]['#'] != "") {
-                $overrideanswers = explode(';', $data['#']['wirisoverrideanswer'][0]['#']);
-                foreach ($overrideanswers as $key => $value) {
-                    if (trim($value) != '') {
-                        $msg = '<p><strong>' . get_string('warning') . '</strong>:<br />';
-                        $msg .= '<em>' . $data['#']['name'][0]['#']['text'][0]['#'] . '</em><br />';
-                        $msg .= get_string('multichoicewiris_cantimportoverride', 'qtype_multichoicewiris');
-                        $msg .= '</p>';
-                        echo $msg;
-                    }
-                }
-            }
-
-            $wirisquestion .= '</question>';
-            $qo->wirisquestion = $wirisquestion;
-            return $qo;
-        } else {
-            // Moodle 2.x.
-            $qo = $format->import_multichoice($data);
-            $qo->qtype = 'multichoicewiris';
-            $qo->wirisquestion = trim($this->decode_html_entities($data['#']['wirisquestion'][0]['#']));
-            return $qo;
-        }
+        // Moodle > 2.x.
+        $qo = $format->import_multichoice($data);
+        $qo->qtype = 'multichoicewiris';
+        $qo->wirisquestion = trim($this->decode_html_entities($data['#']['wirisquestion'][0]['#']));
+        return $qo;
     }
 }

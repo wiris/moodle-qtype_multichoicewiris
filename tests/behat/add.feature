@@ -36,7 +36,7 @@ Feature: Test creating a Multiple choice wiris question without template
     And I press the left key
     And I type "b"
     And I press the right key
-    And I type "-15"    
+    And I type "-15"
     And I go back in Wiris Quizzes Studio
     And I save Wiris Quizzes Studio
     Then I set the following fields to these values:

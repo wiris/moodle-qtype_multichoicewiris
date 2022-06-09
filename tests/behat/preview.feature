@@ -28,6 +28,6 @@ Feature: A student can answer a Wiris Multi Choice question type
     When I am on the "Multi choice wiris" "core_question > preview" page logged in as teacher
     Then Wirisformula should exist
     When I click on "1. " "text"
-    And I press "Submit and finish" "button"
+    And I press "Submit and finish"
     Then Feedback should exist
     And Generalfeedback should exist

@@ -14,8 +14,8 @@ Feature: A student can answer a Wiris Multi Choice question type
       | fullname | shortname | format |
       | Course 1 | C1        | weeks  |
     And the following "course enrolments" exist:
-      | user     | course | role    |
-      | student1 | C1     | student |
+      | user    | course | role           |
+      | teacher | C1     | editingteacher |
     And the following "question categories" exist:
       | contextlevel | reference | name           |
       | Course       | C1        | Default for C1 |
@@ -25,7 +25,7 @@ Feature: A student can answer a Wiris Multi Choice question type
 
   @javascript
   Scenario: A student executes a wiris multichoice question type
-    When I am on the "Multi choice wiris" "core_question > preview" page logged in as teacher 
+    When I am on the "Multi choice wiris" "core_question > preview" page logged in as teacher
     Then Wirisformula should exist
     When I click on "1. " "text"
     And I press "Submit and finish" "button"

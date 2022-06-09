@@ -23,7 +23,7 @@ Feature: Test editing a Multichoice wiris question
 
   @javascript @_switch_window
   Scenario: Edit a multichoice wiris question
-    When I am on the "multichoice-wiris-001" "core_question > edit" page logged in as teacher 
+    When I am on the "multichoice-wiris-001" "core_question > edit" page logged in as teacher
     And I set the following fields to these values:
       | Question name | Edited multichoice-wiris-001 name |
     And I press "id_submitbutton"

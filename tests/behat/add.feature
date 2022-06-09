@@ -18,7 +18,7 @@ Feature: Test creating a Multiple choice wiris question without template
   @javascript
   Scenario: Create a Multiple choice wiris question
     When I am on the "Course 1" "core_question > course question bank" page logged in as teacher
-    And I press "Create a new question ..." 
+    And I press "Create a new question ..."
     And I choose the question type "Multiple choice - science"
     Then I set the following fields to these values:
       | Question name | multichoiceanswer-wiris-001             |

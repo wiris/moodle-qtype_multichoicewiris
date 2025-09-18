@@ -1,4 +1,4 @@
-@javascript @qtype_multichoicewiris @studentwiris 
+@javascript @qtype_multichoicewiris @studentwiris @wqmdl-272
 Feature: Student answers a quiz with a Multiple choice (WIRIS) question
 
     Background:

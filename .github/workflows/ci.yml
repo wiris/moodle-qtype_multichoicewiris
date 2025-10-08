@@ -22,7 +22,7 @@ jobs:
       matrix:
         php: ["8.1"]
         moodle_branch:
-          ["MOODLE_405_STABLE"]
+          ["MOODLE_401_STABLE"]
         database: [pgsql]
         browser: ["chrome", "firefox"]
 

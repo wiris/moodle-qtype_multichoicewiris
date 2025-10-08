@@ -25,18 +25,6 @@ jobs:
           ["MOODLE_405_STABLE"]
         database: [pgsql]
         browser: ["chrome", "firefox"]
-        exclude:
-          # Exclude Moodle+PHP incompatible versions
-          # See: https://docs.moodle.org/dev/Moodle_and_PHP
-
-
-
-        include:
-          # Only test master against latest PHP until we know which
-          # versions are supported in the next release
-          - moodle_branch: "main"
-            php: "8.4"
-            database: "pgsql"
 
     steps:
       - name: Check out repository code

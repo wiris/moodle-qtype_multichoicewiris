@@ -16,14 +16,14 @@ Feature: Student answers a quiz with a Multiple choice (WIRIS) question
         | activity | name                  | course | idnumber |
         | quiz     | WIRIS MC Quiz         | C1     | quiz_mc  |
 
-    And the following "question categories" exist:    Then I should see "Review"
+    And the following "question categories" exist:
         | contextlevel | reference | name       |
         | Course       | C1        | WIRIS bank |
 
     # Single-answer MC with 3 choices; "2" is correct
     And the following "questions" exist:
         | questioncategory | qtype              | name               | questiontext            | defaultmark | single | answers[1] | fraction[1] | answers[2] | fraction[2] | answers[3] | fraction[3] |
-        | WIRIS bank       | multichoicewiris   | MC WIRIS – 1+1     | <p>What is 1 + 1?</p>   | 1.0         | 1      | 2          | 1.0         | 3          | 0.0         | 1          | 0.0         |
+        | WIRIS bank       | multichoice   | MC WIRIS – 1+1     | <p>What is 1 + 1?</p>   | 1.0         | 1      | 2          | 1.0         | 3          | 0.0         | 1          | 0.0         |
 
     And quiz "WIRIS MC Quiz" contains the following questions:
         | question         | page |

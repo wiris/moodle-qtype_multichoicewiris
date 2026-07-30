@@ -1,4 +1,4 @@
-@qtype_multichoicewiris @wq @javascript @student @attempt @inputoptions @regression
+@qtype @qtype_multichoicewiris @wq @javascript @student @attempt @inputoptions @regression
 Feature: Multiple choice (WIRIS) answer-mode input options
     In order to trust both Multiple choice (WIRIS) answer modes
     As a student

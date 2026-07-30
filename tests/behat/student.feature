@@ -1,4 +1,4 @@
-@qtype_multichoicewiris @wq @javascript @student @attempt @regression
+@qtype @qtype_multichoicewiris @wq @javascript @student @attempt @regression
 Feature: Student answers a quiz with a Multiple choice (WIRIS) question
 
     Background:
